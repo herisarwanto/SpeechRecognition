@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">English Learning With Ngram</string>
+    <string name="english_learning">English Learning</string>
+    <string name="nama">Nama</string>
+    <string name="email">Email</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+
+    <!-- Error message -->
+    <string name="empty_field">"Field ini tidak boleh kosong"</string>
+    <string name="min_password">"Password minimal 6 karakter"</string>
+    <string name="email_not_valid">"Email tidak valid"</string>
+    <string name="login_success">Login Berhasil</string>
+    <string name="login_fail">Login Gagal</string>
+    <string name="logout">Logout</string>
+
+    <string name="username_password_wrong">Username atau password salah</string>
+    <string name="easy">Easy</string>
+    <string name="medium">Medium</string>
+    <string name="pilih_level">Select Level</string>
+    <string name="hello">Hello,</string>
+    <string name="_0">0%</string>
+    <string name="dot">...</string>
+    <string name="hard">Hard</string>
+    <string name="loading">Loading...</string>
+    <string name="imagepeople">imagePeople</string>
+
+</resources>
