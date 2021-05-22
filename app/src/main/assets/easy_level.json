@@ -1,0 +1,108 @@
+[
+  {
+    "id_kata": "1",
+    "kata": "Books",
+    "level": "1"
+  },
+  {
+    "id_kata": "2",
+    "kata": "Profanity",
+    "level": "1"
+  },
+  {
+    "id_kata": "5",
+    "kata": "English",
+    "level": "1"
+  },
+  {
+    "id_kata": "6",
+    "kata": "Learning",
+    "level": "1"
+  },
+  {
+    "id_kata": "7",
+    "kata": "Weekly",
+    "level": "1"
+  },
+  {
+    "id_kata": "8",
+    "kata": "Rooms",
+    "level": "1"
+  },
+  {
+    "id_kata": "9",
+    "kata": "Schooling",
+    "level": "1"
+  },
+  {
+    "id_kata": "10",
+    "kata": "Teacher",
+    "level": "1"
+  },
+  {
+    "id_kata": "21",
+    "kata": "Interesting",
+    "level": "1"
+  },
+  {
+    "id_kata": "4",
+    "kata": "Unknown location",
+    "level": "2"
+  },
+  {
+    "id_kata": "11",
+    "kata": "Good experience",
+    "level": "2"
+  },
+  {
+    "id_kata": "12",
+    "kata": "Speech Recognition",
+    "level": "2"
+  },
+  {
+    "id_kata": "13",
+    "kata": "Not allowed",
+    "level": "2"
+  },
+  {
+    "id_kata": "14",
+    "kata": "It's easy",
+    "level": "2"
+  },
+  {
+    "id_kata": "15",
+    "kata": "Good job",
+    "level": "2"
+  },
+  {
+    "id_kata": "20",
+    "kata": "Good game",
+    "level": "2"
+  },
+  {
+    "id_kata": "3",
+    "kata": "Literally good percentage",
+    "level": "3"
+  },
+  {
+    "id_kata": "16",
+    "kata": "dinosaurs are the largest animals",
+    "level": "3"
+  },
+  {
+    "id_kata": "17",
+    "kata": "Percentage of present",
+    "level": "3"
+  },
+  {
+    "id_kata": "18",
+    "kata": "Linux better than windows crack",
+    "level": "3"
+  },
+  {
+    "id_kata": "19",
+    "kata": "No smoking better",
+    "level": "3"
+  }
+
+]
