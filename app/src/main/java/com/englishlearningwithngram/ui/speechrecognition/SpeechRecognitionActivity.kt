@@ -10,7 +10,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.englishlearningwithngram.R
 import com.englishlearningwithngram.databinding.ActivitySpeechRecognitionBinding
-import com.englishlearningwithngram.model.Word
 import com.englishlearningwithngram.model.WordModel
 import com.englishlearningwithngram.repository.Repository
 import java.io.InputStream

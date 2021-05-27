@@ -28,12 +28,12 @@ class HomeActivity : AppCompatActivity(), View.OnClickListener {
         val nama = sharedPrefManager!!.getValueString("nama")
 
         binding.tvHello.text = "Hello, $nama"
-
         binding.btnEasy.setOnClickListener(this)
         binding.btnMedium.setOnClickListener(this)
         binding.btnHard.setOnClickListener(this)
         binding.btnMedium.setOnClickListener(this)
         binding.btnLogout.setOnClickListener(this)
+        binding.ivDrawer.setOnClickListener(this)
     }
 
     override fun onClick(v: View) {
@@ -48,6 +48,9 @@ class HomeActivity : AppCompatActivity(), View.OnClickListener {
                 openActivity(3)
             }
             R.id.btn_logout -> {
+                alertDialog()
+            }
+            R.id.iv_drawer -> {
                 alertDialog()
             }
         }
