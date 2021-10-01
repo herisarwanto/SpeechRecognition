@@ -26,5 +26,6 @@
     <string name="hard">Hard</string>
     <string name="loading">Loading...</string>
     <string name="imagepeople">imagePeople</string>
+    <string name="bigram">Bigram</string>
 
 </resources>

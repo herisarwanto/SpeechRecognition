@@ -40,23 +40,68 @@
         android:layout_below="@id/ly_app_bar"
         android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/tv_speech"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/dimen_10d"
-            android:layout_toStartOf="@+id/ib_refresh"
-            android:text="@string/loading"
-            android:textSize="@dimen/dimen_22s"
-            android:textColor="@color/black"/>
-
-        <ImageButton
-            android:id="@+id/ib_refresh"
+        <LinearLayout
+            android:id="@+id/ly_bigram"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:background="@drawable/ic_refresh"
-            android:backgroundTint="@color/pink"/>
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tvVersion"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_margin="5dp"-->
+<!--                    android:text="Versi Android"-->
+<!--                    android:textColor="@android:color/black"-->
+<!--                    android:textSize="20sp"-->
+<!--                    android:textStyle="bold" />-->
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:id="@+id/til_inputWord"
+                    android:hint="Choose Word"
+                    app:hintEnabled="true">
+
+                    <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                        android:id="@+id/inputWord"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </RelativeLayout>
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_speech"-->
+<!--                    android:layout_width="fill_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="@dimen/dimen_10d"-->
+<!--                    android:layout_toStartOf="@+id/ib_refresh"-->
+<!--                    android:text="@string/loading"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="@dimen/dimen_22s" />-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/ib_refresh"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:background="@drawable/ic_refresh"-->
+<!--            android:backgroundTint="@color/pink"/>-->
+
+<!--            </RelativeLayout>-->
 
         <TextView
             android:id="@+id/tv_speech_result"
@@ -64,31 +109,56 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/dimen_10d"
             android:layout_marginStart="@dimen/dimen_10d"
-            android:layout_below="@id/tv_speech"
             android:text="@string/dot"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
-            android:textColor="@color/green"/>
+            android:textColor="@android:color/holo_green_dark"/>
 
-<!--        <com.google.android.material.textview.MaterialTextView-->
-<!--            android:id="@+id/textView"-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/dimen_10d"-->
+<!--                android:layout_marginStart="@dimen/dimen_10d"-->
+<!--                android:padding="@dimen/dimen_10d"-->
+<!--                android:background="@drawable/border_corner_radius"-->
+<!--                android:orientation="vertical">-->
+
+<!--        <TextView-->
 <!--            android:layout_width="match_parent"-->
 <!--            android:layout_height="wrap_content"-->
-<!--            android:layout_below="@id/tv_speech_result"-->
-<!--            android:layout_marginTop="32dp"-->
-<!--            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6" />-->
+<!--            android:text="@string/bigram"-->
+<!--            android:textSize="@dimen/dimen_18s"/>-->
 
-<!--        <ProgressBar-->
-<!--            android:id="@+id/progressBar"-->
-<!--            style="?android:attr/progressBarStyleHorizontal"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_below="@id/textView"-->
-<!--            android:layout_marginTop="@dimen/dimen_20d"/>-->
+<!--            <TextView-->
+<!--                android:id="@+id/tv_a"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/dimen_10d"-->
+<!--                android:layout_marginStart="@dimen/dimen_10d"-->
+<!--                android:text=""/>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_b"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/dimen_10d"-->
+<!--                android:layout_marginStart="@dimen/dimen_10d"-->
+<!--                android:text=""/>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_math"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/dimen_10d"-->
+<!--                android:layout_marginStart="@dimen/dimen_10d"-->
+<!--                android:text=""/>-->
+<!--            </LinearLayout>-->
+
+        </LinearLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/tv_speech_result">
+            android:layout_below="@id/ly_bigram">
 
         <ProgressBar
             android:id="@+id/progress_bar"
@@ -111,21 +181,6 @@
             app:layout_constraintTop_toTopOf="@+id/progress_bar"
             android:text="@string/_0"
             tools:text="60%" />
-
-<!--        <Button-->
-<!--            android:id="@+id/button_decr"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="- 10%"-->
-<!--            app:layout_constraintStart_toStartOf="@+id/progress_bar"-->
-<!--            app:layout_constraintTop_toBottomOf="@+id/progress_bar" />-->
-<!--        <Button-->
-<!--            android:id="@+id/button_incr"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="+ 10%"-->
-<!--            app:layout_constraintEnd_toEndOf="@+id/progress_bar"-->
-<!--            app:layout_constraintTop_toBottomOf="@+id/progress_bar" />-->
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
